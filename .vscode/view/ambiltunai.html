@@ -11,11 +11,54 @@
 </div>
 <p class="text-center text-white text-3xl mt-12">PILIH JUMLAH PAKET TUNAI</p>
 </div>
-<div class="text-white text-2xl ml-80 mt-12">
-    <a href=""><p class="mt-12"><- 100.000</p></a>
-    <a href=""><p class="mt-12"><- 200.000</p></a>
-    <a href=""><p class="mt-12"><- 300.000</p></a>
-    <a href=""><p class="mt-12"><- 500.000</p></a>
-</div>
+<div class="text-center flex justify-center mb-20">
+    <div class="grid space-y-20 w-1/2 text-white text-3xl mt-20">
+        <button onclick="SeRatus()"><- 100.000</button>
+        <button onclick="duaRatus()"><- 200.000</button>
+        <button onclick="tigaRatus()"><- 300.000</button>
+        <button onclick="limaRatus()"><- 500.000</button>
+    </div>
+    <div class="grid space-y-20 w-1/2 text-white text-3xl mt-20">
+        <button onclick="satujuta()">1.000.000 -></button>
+        <button onclick="satusetengah()">1.500.000 -></button>
+        <button onclick="duajuta()">2.000.000 -></button>
+        <a href="jenistransaksi.html" class="mr-36">TRANSAKSI LAINNYA -></a>
+    </div>
 </body>
+<script>
+    let saldo = 5000000;
+    let paket = {
+        seratus: '1000000',
+        duaratus:'2000000',
+        tigaratus: '3000000',
+        limaratus: '5000000',
+        satujuta: '10000000',
+        satusetengah: '15000000',
+        duajuta: '20000000',
+    };
+    function SeRatus(){
+        let saldoakhir = saldo - paket.seratus;
+        confirm(`sisa saldo anda ${saldoakhir}`)
+        window.open('ambilkartu.html', '_blank')
+        window.close('ambiltunai.html');
+    }
+    function duaRatus() {
+        let saldoakhir = saldo - paket.duaratus;
+        confirm(`sisa saldo anda ${saldoakhir}`)
+        window.open('ambilkartu.html', '_blank')
+        window.close('ambiltunai.html');
+    }
+    function tigaRatus(){
+        let saldoakhir = saldo - paket.seratus;
+        confirm(`sisa saldo anda ${saldoakhir}`)
+        window.open('ambilkartu.html', '_blank')
+        window.close('ambiltunai.html');
+    }
+    function limaRatus(){
+        let saldoakhir = saldo - paket.seratus;
+        confirm(`sisa saldo anda ${saldoakhir}`)
+        window.open('ambilkartu.html', '_blank')
+        window.close('ambiltunai.html');
+    }
+</script>
 </html>
