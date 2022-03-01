@@ -26,7 +26,7 @@
     </div>
 </body>
 <script>
-    let saldo = 5000000;
+    let saldo = 50000000;
     let paket = {
         seratus: '1000000',
         duaratus:'2000000',
@@ -49,13 +49,31 @@
         window.close('ambiltunai.html');
     }
     function tigaRatus(){
-        let saldoakhir = saldo - paket.seratus;
+        let saldoakhir = saldo - paket.tigaratus;
         confirm(`sisa saldo anda ${saldoakhir}`)
         window.open('ambilkartu.html', '_blank')
         window.close('ambiltunai.html');
     }
     function limaRatus(){
-        let saldoakhir = saldo - paket.seratus;
+        let saldoakhir = saldo - paket.limaratus;
+        confirm(`sisa saldo anda ${saldoakhir}`)
+        window.open('ambilkartu.html', '_blank')
+        window.close('ambiltunai.html');
+    }
+    function satujuta(){
+        let saldoakhir = saldo - paket.satujuta;
+        confirm(`sisa saldo anda ${saldoakhir}`)
+        window.open('ambilkartu.html', '_blank')
+        window.close('ambiltunai.html');
+    }
+    function satusetengah(){
+        let saldoakhir = saldo - paket.satusetengah;
+        confirm(`sisa saldo anda ${saldoakhir}`)
+        window.open('ambilkartu.html', '_blank')
+        window.close('ambiltunai.html');
+    }
+    function duajuta(){
+        let saldoakhir = saldo - paket.duajuta;
         confirm(`sisa saldo anda ${saldoakhir}`)
         window.open('ambilkartu.html', '_blank')
         window.close('ambiltunai.html');
